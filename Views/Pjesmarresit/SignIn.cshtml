@@ -1,0 +1,27 @@
+﻿@model PjesmarresitViewModel
+@{
+    ViewData["Title"] = "Sign In";
+}
+
+
+  <section class="container mt-5">
+      <h1 class="text-center mt-5">Kyçuni</h1>
+      <form class="row d-flex justify-content-center align-items-center">
+
+  <div class="form-outline col-lg-6 mx-2 mb-4">
+   
+    <label class="form-label mt-5" for="form2Example1">Email address...</label>
+    <input asp-for="Email" type="text"id="form2Example1" class="form-control w-100"/>
+  </div>
+
+  <div class="form-outline col-lg-6 mx-2 mb-4">
+   
+    <label class="form-label" for="form2Example2">Fjalekalimi...</label> 
+    <input asp-for="Fjalekalimi" type="password" id="form2Example2" class="form-control w-100" asp-controller="" asp-action=""/>
+  </div>
+  <div class="form-outline col-lg-6 mx-2 mb-4">
+  <button type="button" class="btn btn-primary w-100">Sign in</button>
+  </div>
+</form>
+</section>
+ 

@@ -1,0 +1,19 @@
+﻿@model PjesmarresitViewModel
+
+<div class="container">
+    <h1 class="my-5 p-4">Profili i perdoruesit</h1>
+    <ul class="list-group list-group-flush fw-bold" style="font-size:20px; font-weight:bolder">
+        <li class="list-group-item p-3">Emri: @Model.Emri</li>
+        <li class="list-group-item p-3">Mbiemri: @Model.Mbiemri</li>
+        <li class="list-group-item p-3">Email: @Model.Email</li>
+        <li class="list-group-item p-3">Emri i perdoruesit: @Model.Perdoruesi</li>
+    </ul>
+    <div class="row d-flex justify-content-between mt-5">
+        <a type="button" class="btn btn-success my-2 mx-4 col-md-3 col-sm-3  " asp-controller="Pjesmarresit" asp-action="Edit">Edit profile</a> </>
+        <a type="button" class="btn btn-primary  my-2 mx-4 col-md-3 col-sm-3 " asp-controller="Home" asp-action="Index">Sign out</a>
+        <a type="button" class="btn btn-danger  my-2 mx-4 col-md-3 col-sm-3 " asp-controller="Pjesmarresit" asp-action="Delete">Delete account</a>
+    </div>
+</div>
+
+
+

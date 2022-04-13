@@ -2,7 +2,26 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<div id="background">
+     <div class="container">
+        <div class="text-center">
+            <h1 class="display-4 text-white text-light" style="padding-top:250px;">Biblioteka ime</h1>
+            <p class="text-white text-light"> Ketu mund te gjeni informacionet e kerkuara nga ju, andaj j'u sugjerojme te regjistroheni.
+             ne librarine tone ashtu qe platforma jone do t' ju shfaq te dhenat e kerkuara ne baze te autorit, emrit te librit apo edhe kategoris se librit.</p>
+
+            <div class="">
+                <div class="row d-flex justify-content-center p-3" @*style="display:flex; justify-content:space-evenly"*@>
+                    <a class="col-sm-3 my-3 mx-sm-5 btn btn-primary" asp-controller="Pjesmarresit" asp-action="SignIn">Sign in</a>
+                    <a class="col-sm-3 my-3 mx-sm-5 btn btn-primary" asp-controller="Pjesmarresit" asp-action="SignUp">Sign up</a>
+                </div>
+                <!--  <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>-->
+
+            </div>
+        </div>
+    </div>
 </div>
+
+

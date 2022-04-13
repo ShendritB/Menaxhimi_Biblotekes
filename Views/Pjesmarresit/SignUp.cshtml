@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Sign Up";
+}
+
+@model PjesmarresitViewModel
+
+  <section class="container">
+      
+      <h1 class="text-center mt-5">Regjistrohuni</h1>
+      <form class="row d-flex justify-content-center">
+  <div class="form-outline col-lg-6 mx-2 mb-4">
+   
+    <label class="form-label mt-5" for="form2Example1">Emri...</label>
+    <input asp-for="Emri" type="text" id="form2Example1" class="form-control" />
+  </div>
+   <div class="form-outline col-lg-6 mx-2 mb-4">
+   
+    <label class="form-label" for="form2Example1">Mbiemri...</label>
+    <input asp-for="Mbiemri" type="text" id="form2Example1" class="form-control" />
+  </div>
+
+   <div class="form-outline col-lg-6 mx-2 mb-4">
+   
+    <label class="form-label" for="form2Example1">Email address...</label>
+    <input asp-for="Email" type="email" id="form2Example1" class="form-control" />
+  </div>
+
+   <div class="form-outline col-lg-6 mx-2 mb-4">
+   
+    <label class="form-label" for="form2Example1">Emri i perdoruesit...</label>
+    <input asp-for="Perdoruesi" type="text" id="form2Example1" class="form-control" />
+  </div>
+  <!-- Password input -->
+  <div class="form-outline col-lg-6 mx-2 mb-4">
+   
+    <label class="form-label" for="form2Example2">Fjalekalimi</label> 
+    <input asp-for="Fjalekalimi" type="password" id="form2Example2" class="form-control" />
+  </div>
+   <div class="form-outline col-lg-6 mx-2 mb-4">
+  <button type="button" class="btn btn-primary w-100 mb-5">Sign up</button>
+  </div>
+</form>
+</section>
