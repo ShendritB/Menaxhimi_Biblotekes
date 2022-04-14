@@ -1,6 +1,7 @@
 ﻿using Menaxhimi_Biblotekes.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace Menaxhimi_Biblotekes.Controllers
 {
@@ -57,7 +58,14 @@ namespace Menaxhimi_Biblotekes.Controllers
         [HttpPost]
         public void Save()
         {
-         
+           /* try
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }*/
         }
 
         // POST: PjesmarresitController/Edit/5
@@ -83,18 +91,18 @@ namespace Menaxhimi_Biblotekes.Controllers
         }
 
         // POST: PjesmarresitController/Delete/5
-       /* [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }*/
+        /* [HttpPost]
+         [ValidateAntiForgeryToken]
+         public ActionResult Delete(int id, IFormCollection collection)
+         {
+             try
+             {
+                 return RedirectToAction(nameof(Index));
+             }
+             catch
+             {
+                 return View();
+             }
+         }*/
     }
 }

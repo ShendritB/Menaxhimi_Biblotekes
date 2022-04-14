@@ -75,3 +75,23 @@ body {
     background-image: linear-gradient(rgba(4, 9, 30, 0.884),rgba(0, 10, 46, 0.815)), url(/css/Img/2wp.jpg);
     height: 100vh;
 }
+
+.HindexA {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 15px;
+    border: 2px #30AADD solid;
+    border-radius: 20px;
+}
+    .HindexA:hover {
+        color: #30AADD;
+        border: 2px #30AADD solid;
+        transition: 0.5s;
+        text-decoration: none;
+    }
+
+#MainHeader {
+    color:#30AADD;
+    font-weight:bold;
+}

@@ -1,5 +1,51 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model List<LibratViewModel>
+
 @{
+    ViewData["Title"] = "Librat";
 }
+
+<div class="container d-flex justify-content-center">
+    <table class="table table-striped mt-5 border">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Kategoria</th>
+                <th scope="col">Titulli</th>
+                <th scope="col">ISBN</th>
+                <th scope="col">Botuesi</th>
+                <th scope="col">Botuar</th>
+                <th scope="col">Sasia</th>
+                <th scope="col">Huazo</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kategoria</td>
+                <td>Titulli</td>
+                <td>17082022134124</td>
+                <td>Botuesi</td>
+                <td>31/09/2022</td>
+                <td>10</td>
+                <td>
+                    <a type="button" asp-controller="Librat" asp-action="Details" class="btn btn-success w-100">Huazo</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Kategoria</td>
+                <td>Titulli</td>
+                <td>17082022134124</td>
+                <td>Botuesi</td>
+                <td>31/09/2022</td>
+                <td>10</td>
+                <td>
+                    <a type="button" asp-controller="Librat" asp-action="Details" class="btn btn-success w-100">Huazo</a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

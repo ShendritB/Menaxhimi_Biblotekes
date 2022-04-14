@@ -1,5 +1,22 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model LibratViewModel
+
 @{
+    ViewData["Title"] = "Titulli";//@Model.Titulli;
 }
+<div class="d-flex justify-content-center">
+    <div class="card h-100">
+        <div class="">
+      <img src="~/css/Img/lib1.jpg" class="card-img-top" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">@Model.Titulli</h5>
+        <p class="card-text">@Model.Pershkrimi</p>
+      </div>
+      <div class="card-footer text-center">
+        <small class="text-muted">@*@Model.Autoret *@ @Model.ShtepiaBotuese @Model.VitiBotimit ISBN: @Model.ISBN</small>@*
+        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted">Last updated 3 mins ago</small>*@
+      </div>
+      <a type="button" class="btn btn-success" asp-controller="Librat" asp-action="Index">Huazo</a>
+    </div>
+</div>

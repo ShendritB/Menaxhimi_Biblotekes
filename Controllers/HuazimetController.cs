@@ -11,6 +11,19 @@ namespace Menaxhimi_Biblotekes.Controllers
             return View();
         }
 
+
+        public ActionResult Aprovo()
+        {
+            //Save to DB
+            return RedirectToAction("Index","Huazimet");
+        }
+    
+        public ActionResult Refuzo()
+        {
+            //Save to DB
+            return RedirectToAction("Index", "Huazimet");
+        }
+
         // GET: HuazimetController/Details/5
         public ActionResult Details(int id)
         {
